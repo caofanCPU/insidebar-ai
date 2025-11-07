@@ -296,6 +296,10 @@
     "message": "Сбросить"
   },
 
+  "tooltipOpenInNewTab": {
+    "message": "Открыть в новой вкладке"
+  },
+
   "sectionAbout": {
     "message": "О расширении"
   },

@@ -172,6 +172,22 @@ async function renderProviderTabs() {
   promptLibraryTab.addEventListener('click', () => switchToView('prompt-library'));
   tabsContainer.appendChild(promptLibraryTab);
 
+  // Add open in new tab button
+  const openTabButton = document.createElement('button');
+  openTabButton.id = 'open-in-tab-btn';
+  openTabButton.title = t('tooltipOpenInNewTab') || 'Open in new tab';
+
+  const openTabIcon = document.createElement('span');
+  openTabIcon.className = 'material-symbols-outlined';
+  openTabIcon.textContent = 'open_in_new';
+  openTabIcon.style.fontSize = '20px';
+
+  openTabButton.appendChild(openTabIcon);
+  openTabButton.addEventListener('click', () => {
+    chrome.tabs.create({ url: chrome.runtime.getURL('sidebar/sidebar.html') });
+  });
+  tabsContainer.appendChild(openTabButton);
+
   // Add settings tab at the very end (right side)
   const settingsTab = document.createElement('button');
   settingsTab.id = 'settings-tab';

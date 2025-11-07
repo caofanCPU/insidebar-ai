@@ -296,6 +296,10 @@
     "message": "Reset"
   },
 
+  "tooltipOpenInNewTab": {
+    "message": "Open in new tab"
+  },
+
   "sectionAbout": {
     "message": "About"
   },

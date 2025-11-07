@@ -170,9 +170,10 @@ body {
   margin: 8px 4px;
 }
 
-/* UI tabs (chat history, prompt library, settings) - fixed width on right */
+/* UI tabs (chat history, prompt library, settings, open in new tab) - fixed width on right */
 #provider-tabs button[data-view],
-#provider-tabs button#settings-tab {
+#provider-tabs button#settings-tab,
+#provider-tabs button#open-in-tab-btn {
   flex: 0 0 48px;
   max-width: 48px;
 }

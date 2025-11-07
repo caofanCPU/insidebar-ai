@@ -285,6 +285,9 @@
   "btnReset": {
     "message": "重設"
   },
+  "tooltipOpenInNewTab": {
+    "message": "在新標籤頁中打開"
+  },
   "sectionAbout": {
     "message": "關於"
   },

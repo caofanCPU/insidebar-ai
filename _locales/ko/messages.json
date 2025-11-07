@@ -285,6 +285,9 @@
   "btnReset": {
     "message": "재설정"
   },
+  "tooltipOpenInNewTab": {
+    "message": "새 탭에서 열기"
+  },
   "sectionAbout": {
     "message": "정보"
   },

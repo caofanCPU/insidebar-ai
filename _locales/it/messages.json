@@ -296,6 +296,10 @@
     "message": "Ripristina"
   },
 
+  "tooltipOpenInNewTab": {
+    "message": "Apri in una nuova scheda"
+  },
+
   "sectionAbout": {
     "message": "Informazioni"
   },

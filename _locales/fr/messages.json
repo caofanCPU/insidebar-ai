@@ -296,6 +296,10 @@
     "message": "Réinitialiser"
   },
 
+  "tooltipOpenInNewTab": {
+    "message": "Ouvrir dans un nouvel onglet"
+  },
+
   "sectionAbout": {
     "message": "À propos"
   },

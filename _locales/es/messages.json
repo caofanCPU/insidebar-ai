@@ -296,6 +296,10 @@
     "message": "Restablecer"
   },
 
+  "tooltipOpenInNewTab": {
+    "message": "Abrir en una nueva pestaña"
+  },
+
   "sectionAbout": {
     "message": "Acerca de"
   },

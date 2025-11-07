@@ -287,6 +287,9 @@
   "btnReset": {
     "message": "重置"
   },
+  "tooltipOpenInNewTab": {
+    "message": "在新标签页中打开"
+  },
   "sectionAbout": {
     "message": "关于"
   },
