@@ -1,7 +1,7 @@
 const DEFAULT_SETTINGS = {
-  enabledProviders: ['grok', 'doubao', 'google', 'deepseek', 'gemini', 'copilot', 'chatgpt', 'claude'],
-  defaultProvider: 'chatgpt',
-  lastSelectedProvider: 'chatgpt',
+  enabledProviders: ['grok', 'doubao', 'google', 'deepseek'],
+  defaultProvider: 'grok',
+  lastSelectedProvider: 'grok',
   rememberLastProvider: true,  // When true, sidebar opens last selected provider; when false, always opens default provider
   theme: 'auto',
   keyboardShortcutEnabled: true,

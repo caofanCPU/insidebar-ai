@@ -1,37 +1,5 @@
 export const PROVIDERS = [
   {
-    id: 'chatgpt',
-    name: 'ChatGPT',
-    url: 'https://chatgpt.com',
-    icon: '/icons/providers/chatgpt.png',
-    iconDark: '/icons/providers/dark/chatgpt.png',
-    enabled: true
-  },
-  {
-    id: 'claude',
-    name: 'Claude',
-    url: 'https://claude.ai',
-    icon: '/icons/providers/claude.png',
-    iconDark: '/icons/providers/dark/claude.png',
-    enabled: true
-  },
-  {
-    id: 'gemini',
-    name: 'Gemini',
-    url: 'https://gemini.google.com',
-    icon: '/icons/providers/gemini.png',
-    iconDark: '/icons/providers/dark/gemini.png',
-    enabled: true
-  },
-  {
-    id: 'google',
-    name: 'Google',
-    url: 'https://www.google.com/search?udm=50',
-    icon: '/icons/providers/google.png',
-    iconDark: '/icons/providers/dark/google.png',
-    enabled: true
-  },
-  {
     id: 'grok',
     name: 'Grok',
     url: 'https://grok.com',
@@ -48,11 +16,11 @@ export const PROVIDERS = [
     enabled: true
   },
   {
-    id: 'copilot',
-    name: 'Microsoft Copilot',
-    url: 'https://copilot.microsoft.com',
-    icon: '/icons/providers/copilot.png',
-    iconDark: '/icons/providers/dark/copilot.png',
+    id: 'google',
+    name: 'Google',
+    url: 'https://www.google.com/search?udm=50',
+    icon: '/icons/providers/google.png',
+    iconDark: '/icons/providers/dark/google.png',
     enabled: true
   },
   {
@@ -62,7 +30,39 @@ export const PROVIDERS = [
     icon: '/icons/providers/deepseek.png',
     iconDark: '/icons/providers/dark/deepseek.png',
     enabled: true
-  }
+  },
+  {
+    id: 'gemini',
+    name: 'Gemini',
+    url: 'https://gemini.google.com',
+    icon: '/icons/providers/gemini.png',
+    iconDark: '/icons/providers/dark/gemini.png',
+    enabled: false
+  },
+  {
+    id: 'copilot',
+    name: 'Microsoft Copilot',
+    url: 'https://copilot.microsoft.com',
+    icon: '/icons/providers/copilot.png',
+    iconDark: '/icons/providers/dark/copilot.png',
+    enabled: false
+  },
+  {
+    id: 'chatgpt',
+    name: 'ChatGPT',
+    url: 'https://chatgpt.com',
+    icon: '/icons/providers/chatgpt.png',
+    iconDark: '/icons/providers/dark/chatgpt.png',
+    enabled: false
+  },
+  {
+    id: 'claude',
+    name: 'Claude',
+    url: 'https://claude.ai',
+    icon: '/icons/providers/claude.png',
+    iconDark: '/icons/providers/dark/claude.png',
+    enabled: false
+  },
 ];
 
 export function getProviderById(id) {
@@ -78,7 +78,7 @@ export async function getProviderByIdWithSettings(id) {
 
 export async function getEnabledProviders() {
   const settings = await chrome.storage.sync.get({
-    enabledProviders: ['grok', 'doubao', 'google', 'deepseek', 'gemini', 'copilot', 'chatgpt', 'claude']
+    enabledProviders: ['grok', 'doubao', 'google', 'deepseek']
   });
 
   return PROVIDERS
