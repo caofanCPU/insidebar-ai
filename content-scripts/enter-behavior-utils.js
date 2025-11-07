@@ -35,9 +35,9 @@ function applyEnterSwapSetting() {
   chrome.storage.sync.get({
     enterKeyBehavior: {
       enabled: true,
-      preset: 'swapped',
-      newlineModifiers: { shift: false, ctrl: false, alt: false, meta: false },
-      sendModifiers: { shift: true, ctrl: false, alt: false, meta: false }
+      preset: 'default',
+      newlineModifiers: { shift: true, ctrl: false, alt: false, meta: false },
+      sendModifiers: { shift: false, ctrl: false, alt: false, meta: false }
     }
   }, (data) => {
     enterKeyConfig = data.enterKeyBehavior;

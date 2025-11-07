@@ -90,7 +90,7 @@ describe('settings module', () => {
       expect(chrome.storage.sync.set).toHaveBeenCalledWith(
         expect.objectContaining({
           enabledProviders: expect.any(Array),
-          defaultProvider: 'chatgpt',
+          defaultProvider: 'grok',
           theme: 'auto',
         })
       );

@@ -192,9 +192,9 @@ async function loadSettings() {
   // Enter key behavior settings
   const enterBehavior = settings.enterKeyBehavior || {
     enabled: true,
-    preset: 'swapped',
-    newlineModifiers: { shift: false, ctrl: false, alt: false, meta: false },
-    sendModifiers: { shift: true, ctrl: false, alt: false, meta: false }
+    preset: 'default',
+    newlineModifiers: { shift: true, ctrl: false, alt: false, meta: false },
+    sendModifiers: { shift: false, ctrl: false, alt: false, meta: false }
   };
 
   const enterBehaviorToggle = document.getElementById('enter-behavior-toggle');
@@ -205,7 +205,7 @@ async function loadSettings() {
 
   const enterPresetSelect = document.getElementById('enter-preset-select');
   if (enterPresetSelect) {
-    enterPresetSelect.value = enterBehavior.preset || 'swapped';
+    enterPresetSelect.value = enterBehavior.preset || 'default';
     updateCustomEnterSettingsVisibility(enterBehavior.preset);
   }
 
@@ -248,7 +248,7 @@ async function updateDefaultProviderDropdown() {
   const settings = await getSettings();
   const enabledProviders = getEnabledProvidersOrDefault(settings);
   const dropdown = document.getElementById('default-provider-select');
-  const currentDefault = settings.defaultProvider || 'chatgpt';
+  const currentDefault = settings.defaultProvider || 'grok';
 
   // Clear existing options
   dropdown.innerHTML = '';

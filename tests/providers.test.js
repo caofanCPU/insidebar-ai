@@ -16,14 +16,14 @@ describe('providers module', () => {
       expect(PROVIDERS).toHaveLength(8);
       const providerIds = PROVIDERS.map((p) => p.id);
       expect(providerIds).toEqual([
-        'chatgpt',
-        'claude',
-        'gemini',
-        'google',
         'grok',
         'doubao',
-        'copilot',
+        'google',
         'deepseek',
+        'gemini',
+        'copilot',
+        'chatgpt',
+        'claude',
       ]);
     });
 

@@ -11,8 +11,8 @@ export const PROVIDERS = [
     id: 'doubao',
     name: 'Doubao',
     url: 'https://www.doubao.com/chat/',
-    icon: '/icons/providers/grok.png',
-    iconDark: '/icons/providers/dark/grok.png',
+    icon: '/icons/providers/doubao.png',
+    iconDark: '/icons/providers/dark/doubao.png',
     enabled: true
   },
   {

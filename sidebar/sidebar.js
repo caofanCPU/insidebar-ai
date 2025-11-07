@@ -296,8 +296,8 @@ function createProviderIframe(provider) {
 // T017: Load default or last selected provider
 async function loadDefaultProvider() {
   const settings = await chrome.storage.sync.get({
-    lastSelectedProvider: 'chatgpt',
-    defaultProvider: 'chatgpt',
+    lastSelectedProvider: 'grok',
+    defaultProvider: 'grok',
     rememberLastProvider: true
   });
 
