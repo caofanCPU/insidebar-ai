@@ -29,9 +29,9 @@
 
 ## Features
 
-### 🤖 6 AI Providers in One Sidebar
+### 🤖 8 AI Providers in One Sidebar
 
-ChatGPT, Claude, Gemini, Google AI Mode, Grok, and DeepSeek — all accessible with one click. No more juggling tabs.
+ChatGPT, Claude, Gemini, Google AI Mode, Grok, Doubao, Microsoft Copilot, and DeepSeek — all accessible with one click. No more juggling tabs.
 
 Switch between providers using the tabs at the bottom of the sidebar. Each session persists, so you can return to any conversation right where you left off.
 
@@ -166,6 +166,8 @@ Download the latest version from GitHub, remove the old extension from `chrome:/
 | **Gemini** | Full Sidebar | https://gemini.google.com |
 | **Google AI** | Search Enhancement | https://google.com (AI Mode) |
 | **Grok** | Full Sidebar | https://grok.com |
+| **Doubao** | Full Sidebar | https://www.doubao.com/chat/ |
+| **Microsoft Copilot** | Full Sidebar | https://copilot.microsoft.com |
 | **DeepSeek** | Full Sidebar | https://chat.deepseek.com |
 
 **No API keys required.** Just log into the providers you want to use in your browser, and insidebar.ai will use those existing sessions.

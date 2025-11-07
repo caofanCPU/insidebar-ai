@@ -21,6 +21,9 @@
     "*://claude.ai/*",
     "*://gemini.google.com/*",
     "*://grok.com/*",
+    "*://www.doubao.com/*",
+    "*://doubao.com/*",
+    "*://*.doubao.com/*",
     "*://chat.deepseek.com/*",
     "*://www.perplexity.ai/*",
     "*://perplexity.ai/*",
@@ -139,6 +142,21 @@
         "content-scripts/grok-history-extractor.js"
       ],
       "css": ["content-scripts/grok-save-button.css"],
+      "run_at": "document_start",
+      "all_frames": true
+    },
+    {
+      "matches": ["https://www.doubao.com/*", "https://doubao.com/*"],
+      "js": [
+        "content-scripts/button-finder-utils.js",
+        "content-scripts/enter-behavior-utils.js",
+        "content-scripts/enter-behavior-doubao.js",
+        "content-scripts/text-injection-all-providers.js",
+        "content-scripts/conversation-extractor-utils.js",
+        "content-scripts/language-detector.js",
+        "content-scripts/doubao-history-extractor.js"
+      ],
+      "css": ["content-scripts/doubao-save-button.css"],
       "run_at": "document_start",
       "all_frames": true
     },

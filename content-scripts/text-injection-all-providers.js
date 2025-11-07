@@ -15,6 +15,12 @@
     ],
     gemini: ['.ql-editor'],
     grok: ['textarea', '.tiptap', '.ProseMirror'],
+    doubao: [
+      'textarea',
+      'textarea.semi-input-textarea-inner',
+      'div[contenteditable="true"][role="textbox"]',
+      'div[contenteditable="true"]'
+    ],
     deepseek: ['textarea.ds-scroll-area'],
     google: ['textarea.ITIRGe', 'textarea[aria-label="Ask anything"]', 'textarea[maxlength="8192"]'],
     // Copilot uses textarea with id="userInput" or data-testid="composer-input"
@@ -32,6 +38,8 @@
       return 'gemini';
     } else if (hostname.includes('grok.com')) {
       return 'grok';
+    } else if (hostname.includes('doubao.com')) {
+      return 'doubao';
     } else if (hostname.includes('deepseek.com')) {
       return 'deepseek';
     } else if (hostname.includes('google.com') && window.location.search.includes('udm=50')) {

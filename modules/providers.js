@@ -40,6 +40,14 @@ export const PROVIDERS = [
     enabled: true
   },
   {
+    id: 'doubao',
+    name: 'Doubao',
+    url: 'https://www.doubao.com/chat/',
+    icon: '/icons/providers/grok.png',
+    iconDark: '/icons/providers/dark/grok.png',
+    enabled: true
+  },
+  {
     id: 'copilot',
     name: 'Microsoft Copilot',
     url: 'https://copilot.microsoft.com',
@@ -70,7 +78,7 @@ export async function getProviderByIdWithSettings(id) {
 
 export async function getEnabledProviders() {
   const settings = await chrome.storage.sync.get({
-    enabledProviders: ['chatgpt', 'claude', 'gemini', 'google', 'grok', 'copilot', 'deepseek']
+    enabledProviders: ['grok', 'doubao', 'google', 'deepseek', 'gemini', 'copilot', 'chatgpt', 'claude']
   });
 
   return PROVIDERS
